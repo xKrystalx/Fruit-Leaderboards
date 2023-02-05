@@ -1,0 +1,24 @@
+<template name="task">
+    <div class = "card p-3 m-3 shadow-sm">
+        <div class = "row no-gutters">
+            <div class = "col-xl-10 col-8">
+                <div class = "card-body">
+                    <div class = "card-text">{{text}}</div>
+                </div>
+            </div>
+            <div class = "col-xl-1 col-2">
+                <button class = "delete btn btn-danger" name = "delete">X</button>
+            </div>
+            <div class = "col-xl-1 col-1 mx-auto">
+                <div class = "row justify-content-center">
+                    <button class = "upvote btn btn-outline-success" name = "upvote">▲</button>
+                </div>
+                <div class = "row justify-content-center" style = "font-family: Lato; font-weight: 400;">{{points}}</div>
+                <div class = "row justify-content-center">
+                    <button class = "downvote btn btn-outline-danger" name = "downvote">▼</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+

@@ -1,0 +1,29 @@
+<body>
+  <div class = "sticky-top shadow-lg p-3 bg-white">
+      <div class = "text-center" style = "font-size: 1.5em;font-weight: 300; font-family: Lato;">Fruit Leaderboards 🍇🍉🍌🍓</div>
+  </div>
+  <div class="container col-xl-5 col-sm-8">
+    <form class = "new-item mx-auto bg-white shadow-sm" style = "margin-top: 100px;">
+      <div class = "form-group">
+        <input type = "text" class = "form-control" name = "text" placeholder = "Name of the fruit" />
+      </div>
+    </form>
+    <div class = "pr-3">
+      <div class = "custom-control custom-switch">
+        <label style = "float:right;">
+          <input type = "checkbox" class = "custom-control-input toggle-sort">
+          <div class = "custom-control-label">{{#if state}}Ascending{{else}}Descending{{/if}}</div>
+        </label>
+      </div>
+    </div>
+    <div>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </div>
+  </div>
+  <!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
